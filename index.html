@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Number Pair — Starter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <h1>Number Pair</h1>
+      <div class="stats">
+        <div>Score: <span id="score">0</span></div>
+        <div>Moves: <span id="moves">0</span></div>
+        <div>Time: <span id="time">00:00</span></div>
+      </div>
+    </header>
+
+    <section class="controls">
+      <button id="new">New</button>
+      <button id="undo">Undo</button>
+      <button id="hint">Hint</button>
+      <button id="shuffle">Shuffle</button>
+      <label class="toggle">Sum to 10
+        <input type="checkbox" id="rule-sum" checked />
+      </label>
+      <label class="toggle">Equal
+        <input type="checkbox" id="rule-eq" checked />
+      </label>
+    </section>
+
+    <main id="board" class="board" aria-label="Number grid" role="grid"></main>
+
+    <footer class="foot">
+      <p><strong>How to play (MVP):</strong> Tap two adjacent tiles (up/down/left/right) that either sum to 10 or are equal. The pair clears and you gain points. When stuck, press <em>Shuffle</em>. This is a simplified starter — rules can be expanded later.</p>
+      <p>Progress autosaves. Built as a learning project — clean, commented code inside <code>script.js</code>.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
